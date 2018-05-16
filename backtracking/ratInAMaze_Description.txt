@@ -1,0 +1,10 @@
+Explanation of the code
+
+printsolution → This function is just printing the solution matrix.
+
+solvemaze → This is the actual function where we are implementing the backtracking algorithm. Firstly, we are checking of our cell is the destination cell or not if (r==SIZE-1) and (c==SIZE-1). If it is the destination cell then our puzzle is already solved. If not, then we are checking if it a valid cell to move or not. A valid cell must be in the matrix i.e., indices must between 0 to SIZE-1 r>=0 && c>=0 && r<SIZE; must not be blocked maze[r][c] == 0 and must not be taken in the path solution[r][c] == 0. If it is a valid move then we are free to take it and move to the next cell. Firstly, we will try the downward cell if(solveMaze(r+1, c)). If it doesn't give us the solution then we will move to the rightward cell, and similarly to the upward and the leftward cells. If all of the cells fail to give us the solution, we will leave the cell solution[r][c] = 0 and go to some other cell.
+
+
+
+
+https://www.codesdope.com/blog/article/backtracking-to-solve-a-rat-in-a-maze-c-java-pytho/
