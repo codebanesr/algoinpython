@@ -1,5 +1,5 @@
-1. It should be stack sortable
-which also means it should not have 2-3-1 pattern (low-high-very.low)
+# 1. It should be stack sortable
+# which also means it should not have 2-3-1 pattern (low-high-very.low)
 
 
 def isbstpreorder(iterable):
